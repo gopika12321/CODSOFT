@@ -1,0 +1,214 @@
+E-COMMERCE WEBSITE
+FIGMA DESIGN
+
+git add .
+git commit -m "C:\Users\Gopika\Downloads\E COMMERCE WEBSITE\e commerce website.png"
+git push origin main
+
+FIGMA CODE
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Furniture Shop</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      margin: 0;
+      background: #f5f5f5;
+    }
+    .sidebar {
+      width: 30%;
+      padding: 20px;
+      background: white;
+    }
+    .search-bar input {
+      width: 90%;
+      padding: 10px;
+      border: none;
+      border-radius: 10px;
+      background: #f2f2f2;
+    }
+    .banner {
+      margin: 20px 0;
+    }
+    .categories, .products {
+      margin-top: 20px;
+    }
+    .categories h3, .products h3 {
+      margin-bottom: 10px;
+    }
+    .category-items, .product-items {
+      display: flex;
+      gap: 10px;
+    }
+    .category-items div, .product-items div {
+      text-align: center;
+      cursor: pointer;
+    }
+    .category-items img, .product-items img {
+      width: 70px;
+      height: 70px;
+      border-radius: 8px;
+      object-fit: cover;
+    }
+    .category-items span, .product-items span {
+      display: block;
+      margin-top: 5px;
+      background: yellow;
+      padding: 5px;
+      border-radius: 5px;
+    }
+
+    .main-content {
+      width: 70%;
+      background: #fff;
+      padding: 30px;
+      border-radius: 20px;
+    }
+
+    .product-header {
+      display: flex;
+      align-items: center;
+      background: #f2e760;
+      padding: 10px;
+      border-radius: 10px 10px 0 0;
+      font-style: italic;
+    }
+
+    .product-img {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    .thumbnail-row {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    .thumbnail-row img {
+      width: 60px;
+      height: 40px;
+      border-radius: 5px;
+      border: 2px solid #ccc;
+    }
+
+    .product-info {
+      text-align: center;
+    }
+
+    .price {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .qty-selector {
+      margin-top: 10px;
+    }
+
+    .qty-selector button {
+      padding: 5px 10px;
+      background: #f2e760;
+      border: none;
+      cursor: pointer;
+      font-weight: bold;
+      font-size: 16px;
+    }
+
+    .desc {
+      margin: 20px 0;
+      text-align: center;
+    }
+
+    .desc p {
+      font-weight: bold;
+    }
+
+    .add-cart {
+      text-align: center;
+    }
+
+    .add-cart button {
+      background: #f2e760;
+      border: none;
+      padding: 10px 20px;
+      font-weight: bold;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="sidebar">
+    <div class="search-bar">
+      <input type="text" placeholder="Search here">
+    </div>
+
+    <div class="banner">
+      <img src="https://via.placeholder.com/250x100?text=Big+Sale+Furniture" alt="Banner" width="100%">
+    </div>
+
+    <div class="categories">
+      <h3>Categories</h3>
+      <div class="category-items">
+        <div>
+          <img src="https://via.placeholder.com/80x80?text=Wood" alt="Wood">
+          <span>Wood</span>
+        </div>
+        <div>
+          <img src="https://via.placeholder.com/80x80?text=Steel" alt="Steel">
+          <span>Steel</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="products">
+      <h3>Products</h3>
+      <div class="product-items">
+        <div><img src="https://via.placeholder.com/80" alt="Product1"></div>
+        <div><img src="https://via.placeholder.com/80" alt="Product2"></div>
+        <div><img src="https://via.placeholder.com/80" alt="Product3"></div>
+        <div><img src="https://via.placeholder.com/80" alt="Product4"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="main-content">
+    <div class="product-header">
+      <span>&larr;</span>&nbsp; Shoba
+    </div>
+
+    <div class="product-img">
+      <img src="https://via.placeholder.com/300x150?text=Sofa" alt="Main Product" width="80%">
+    </div>
+
+    <div class="thumbnail-row">
+      <img src="https://via.placeholder.com/60x40?text=1" alt="">
+      <img src="https://via.placeholder.com/60x40?text=2" alt="">
+      <img src="https://via.placeholder.com/60x40?text=3" alt="">
+    </div>
+
+    <div class="product-info">
+      <p>Kusan Shoba (5 sheats)</p>
+      <div class="price">$20000</div>
+      <div class="qty-selector">
+        <button>+</button>
+        <span>0</span>
+        <button>-</button>
+      </div>
+    </div>
+
+    <div class="desc">
+      <p>Desc:</p>
+      <p>Discover an exquisite collection<br>of handcrafted pieces that<br>redefine your living spaces</p>
+    </div>
+
+    <div class="add-cart">
+      <button>Add to Cart</button>
+    </div>
+  </div>
+</body>
+</html>
