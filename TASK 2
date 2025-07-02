@@ -1,1 +1,131 @@
+EMAIL TEMPLATE
+FIGMA DESIGN
+
+git add .
+git commit -m "C:\Users\Gopika\Downloads\EMAIL TEMPLATE\EMAIL TEMPLATE.png"
+git push origin main
+
+FIGMA DESIGN CODE
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Fino Bags</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f4f4f4;
+      text-align: center;
+    }
+
+    .container {
+      max-width: 400px;
+      margin: 0 auto;
+      padding: 20px;
+      background: white;
+    }
+
+    h1 {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    .top-image img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      margin: 20px 0;
+    }
+
+    .grid img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .promo {
+      background: orange;
+      color: black;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      font-weight: bold;
+      height: 150px;
+      border-radius: 10px;
+    }
+
+    .special {
+      background: crimson;
+      color: black;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      font-weight: bold;
+      height: 150px;
+      border-radius: 10px;
+    }
+
+    .follow {
+      margin: 20px 0;
+    }
+
+    .follow img {
+      width: 24px;
+      margin: 0 5px;
+      vertical-align: middle;
+    }
+
+    .unsubscribe {
+      font-size: 14px;
+      margin-top: 10px;
+    }
+
+    .unsubscribe span {
+      font-weight: bold;
+      text-decoration: underline;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>FINO BAGS</h1>
+    <div class="top-image">
+      <img src="https://via.placeholder.com/350x200?text=NEW+LOOK+CLASSIC+STYLE+SHOP+NOW" alt="Top Banner"/>
+    </div>
+
+    <div class="grid">
+      <img src="https://via.placeholder.com/150x150?text=Red+Bag" alt="Red Bag"/>
+      <img src="https://via.placeholder.com/150x150?text=Man+with+Backpack" alt="Man with Bag"/>
+    </div>
+
+    <div class="grid">
+      <div class="promo">50% OFF</div>
+      <img src="https://via.placeholder.com/150x150?text=Brown+Bag+on+Road" alt="Brown Bag"/>
+    </div>
+
+    <div class="special">SPECIAL OFFER</div>
+
+    <div class="follow">
+      <p>FOLLOW US ON</p>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram"/>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/9/9f/X_logo_2023.svg" alt="X"/>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/7/75/YouTube_social_white_square_(2017).svg" alt="YouTube"/>
+    </div>
+
+    <div class="unsubscribe">
+      DO YOU NEED BREAK? <span>UNSUBSCRIBE</span>
+    </div>
+  </div>
+</body>
+</html>
+
 
