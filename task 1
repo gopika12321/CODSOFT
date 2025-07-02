@@ -1,1 +1,318 @@
+MOBILE APP SIGNUP FLOW
+FIGMA DESIGN
+
+git add .
+git commit -m "C:\Users\Gopika\Downloads\CODSOFT -TASK 1\MOBILE APP.zip"
+git push origin main
+
+FIGMA DESIGN CODE
+
+1.LOGIN PAGE
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login - Tunely</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background-color: #f2cce4;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      background-color: #f2cce4;
+      width: 90%;
+      max-width: 400px;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+
+    .logo {
+      text-align: right;
+      margin-bottom: 10px;
+    }
+
+    h1 {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    p.subtitle {
+      margin: 5px 0 30px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: 500;
+    }
+
+    input[type="email"],
+    input[type="password"] {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 15px;
+      border: none;
+      border-radius: 8px;
+      box-sizing: border-box;
+    }
+
+    .password-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 5px;
+    }
+
+    .forgot {
+      font-size: 0.9em;
+      text-decoration: underline;
+      color: #000;
+    }
+
+    .login-btn {
+      background-color: #d43b3b;
+      color: white;
+      border: none;
+      width: 100%;
+      padding: 12px;
+      font-weight: bold;
+      border-radius: 8px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+    .social-login {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    .social-login p {
+      margin-bottom: 10px;
+    }
+
+    .social-icons img {
+      width: 35px;
+      margin: 0 10px;
+      cursor: pointer;
+    }
+
+    .signup {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .signup a {
+      color: red;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .eye-icon {
+      position: absolute;
+      right: 20px;
+      top: 50%;
+      transform: translateY(-50%);
+      cursor: pointer;
+    }
+
+    .password-container {
+      position: relative;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="logo">
+      <img src="images/music-icon.png" alt="Logo" height="50" />
+    </div>
+    <h1>LOGIN</h1>
+    <p class="subtitle">Welcome back to Tunely</p>
+
+    <form>
+      <label for="email">Email Address</label>
+      <input type="email" id="email" placeholder="indhu@gmail.com" required />
+
+      <div class="password-row">
+        <label for="password">Password</label>
+        <a href="#" class="forgot">Forget Password?</a>
+      </div>
+      <div class="password-container">
+        <input type="password" id="password" placeholder="***********" required />
+        <span class="eye-icon">👁️</span>
+      </div>
+
+      <button type="submit" class="login-btn">LOGIN NOW</button>
+
+      <div class="social-login">
+        <p>Others ways to login</p>
+        <div class="social-icons">
+          <img src="images/google-icon.png" alt="Google" />
+          <img src="images/facebook-icon.png" alt="Facebook" />
+          <img src="images/apple-icon.png" alt="Apple" />
+        </div>
+      </div>
+
+      <div class="signup">
+        <p>Don’t have an account? <a href="#">Create Account</a></p>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
+
+2.CREATE ACCOUNT PAGE
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Create Account - Tunely</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background-color: #efc1dc;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 400px;
+      padding: 20px;
+    }
+
+    h1 {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    p.subtitle {
+      margin: 5px 0 30px;
+      font-size: 16px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: 500;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 15px;
+      border: none;
+      border-radius: 8px;
+      background-color: #f4f4f4;
+      box-sizing: border-box;
+    }
+
+    .password-container {
+      position: relative;
+    }
+
+    .eye-icon {
+      position: absolute;
+      right: 20px;
+      top: 50%;
+      transform: translateY(-50%);
+      cursor: pointer;
+    }
+
+    .create-btn {
+      background-color: #c62828;
+      color: white;
+      border: none;
+      width: 100%;
+      padding: 12px;
+      font-weight: bold;
+      border-radius: 8px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+    .social-login {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    .social-login p {
+      margin-bottom: 10px;
+    }
+
+    .social-icons img {
+      width: 35px;
+      margin: 0 10px;
+      cursor: pointer;
+    }
+
+    .login-link {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .login-link a {
+      color: red;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Create Account</h1>
+    <p class="subtitle">join the world of music</p>
+
+    <form>
+      <label for="name">Your Name</label>
+      <input type="text" id="name" placeholder="Indhu" required />
+
+      <label for="email">Email Address</label>
+      <input type="email" id="email" placeholder="indhu@gmail.com" required />
+
+      <label for="password">Password</label>
+      <div class="password-container">
+        <input type="password" id="password" placeholder="*************" required />
+        <span class="eye-icon">👁️</span>
+      </div>
+
+      <label for="confirm-password">Re-enter Password</label>
+      <div class="password-container">
+        <input type="password" id="confirm-password" placeholder="*************" required />
+        <span class="eye-icon">👁️</span>
+      </div>
+
+      <button type="submit" class="create-btn">Create Account</button>
+
+      <div class="social-login">
+        <p>Create account using</p>
+        <div class="social-icons">
+          <img src="images/google-icon.png" alt="Google" />
+          <img src="images/facebook-icon.png" alt="Facebook" />
+          <img src="images/apple-icon.png" alt="Apple" />
+        </div>
+      </div>
+
+      <div class="login-link">
+        <p>Already have an account? <a href="#">Login</a></p>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
+
 
